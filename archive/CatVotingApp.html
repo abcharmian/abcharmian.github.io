@@ -1,0 +1,93 @@
+<html>
+<head>
+  <title>Cat Voting App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <h1>Cat Voting App</h1>
+  <h3>A simple page to vot for cat</h3><br>
+
+  <table>
+    <!-- one table row with two images and two count:0 and two "Me!" buttons -->
+    <tr>
+      <!-- The cell with image below-->
+      <td><img height="300px" width="300px" src="http://goo.gl/rTNMM8" alt=""></td>
+      <!-- The cell with the count:0 and Me! button below-->
+      <td>
+        <table>
+          <tr>
+            <td>Count: <span id="catOneCount">0</span></td>
+          </tr>
+          <tr>
+            <td><button onclick="increaseCountCatOne()">Me!</button></td>
+          </tr>
+        </table>
+      </td>
+      <!-- The cell with image below-->
+      <td><img height="300px" width="300px" src="http://goo.gl/DjmLfs" alt=""></td>
+      <!-- The cell with the count:0 and Me! button below-->
+      <td>
+        <table>
+          <tr>
+            <td>Count: <span id="catTwoCount">0</span></td>
+          </tr>
+          <tr>
+            <td><button onclick="increaseCountCatTwo()">Me!</button></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <!-- The cell with image below-->
+      <td><img height="300px" width="300px" src="http://goo.gl/sa2Ds2" alt=""></td>
+      <!-- The cell with the count:0 and Me! button below-->
+      <td>
+        <table>
+          <tr>
+            <td>Count:<span id="catThreeCount">0</span></td>
+          </tr>
+          <tr>
+            <td><button onclick="increaseCountCatThree()">Me!</button></td>
+          </tr>
+        </table>
+      </td>
+      <!-- The cell with image below-->
+      <td><img height="300px" width="300px" src="http://goo.gl/fCAid8" alt=""></td>
+      <!-- The cell with the count:0 and Me! button below-->
+      <td>
+        <table>
+          <tr>
+            <td>Count: <span id="catFourCount">0</span></td>
+          </tr>
+          <tr>
+            <td><button onclick="increaseCountCatFour()">Me!</button></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+<script>
+  var cat1 = 0
+  var cat2 = 0
+  var cat3 = 0
+  var cat4 = 0
+  function increaseCountCatOne(){
+    cat1 += 1
+    $("#catOneCount").html(cat1)
+  }
+  function increaseCountCatTwo(){
+    cat2 += 1
+    $("#catTwoCount").html(cat2)
+  }
+  function increaseCountCatThree(){
+    cat3 += 1
+    $("#catThreeCount").html(cat3)
+  }
+  function increaseCountCatFour(){
+    cat4 += 1
+    $("#catFourCount").html(cat4)
+  }
+</script>
+</body>
+</html>
